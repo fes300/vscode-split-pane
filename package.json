@@ -1,7 +1,8 @@
 {
-	"name": "split-pane",
-	"displayName": "split pane",
-	"description": "a simple extension to open a file on a new split pane",
+	"name": "split-dig",
+	"publisher": "fes300",
+	"displayName": "split dig",
+	"description": "a simple extension to \"go to deginition\" on a split pane on the right",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.40.0"
@@ -10,17 +11,17 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:splitPane.openInNewSplit"
+		"onCommand:splitDig.openInNewSplit"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [{
-			"command": "splitPane.openInNewSplit",
-			"title": "SplitPane: open in new split"
+			"command": "splitDig.openInNewSplit",
+			"title": "SplitDig: open in new split"
 		}],
 		"keybindings": [
 			{
-					"command": "splitPane.openInNewSplit",
+					"command": "splitDig.openInNewSplit",
 					"key": "ctrl+f12",
 					"mac": "cmd+f12",
 					"when": "editorTextFocus"
